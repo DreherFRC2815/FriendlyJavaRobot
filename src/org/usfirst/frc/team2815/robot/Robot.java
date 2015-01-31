@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 import org.usfirst.frc.team2815.robot.commands.ExampleCommand;
 import org.usfirst.frc.team2815.robot.subsystems.Drivetrain;
+import org.usfirst.frc.team2815.robot.subsystems.Elevator;
 import org.usfirst.frc.team2815.robot.subsystems.ExampleSubsystem;
 
 /**
@@ -21,8 +22,8 @@ public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
-	public static Drivetrain drivetrain = new Drivetrain();;
-
+	public static Drivetrain drivetrain = new Drivetrain();
+	public static Elevator elevator = new Elevator();
     Command autonomousCommand;
 
     /**
